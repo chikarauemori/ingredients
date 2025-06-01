@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>調味料</h2>
+    
+      <label>塩 </label
+      ><meter
+        id="塩"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>砂糖 </label
+      ><meter
+        id="砂糖"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>塩胡椒 </label
+      ><meter
+        id="塩胡椒"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>醤油 </label
+      ><meter
+        id="醤油"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>ポン酢 </label
+      ><meter
+        id="ポン酢"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>麺つゆ </label
+      ><meter
+        id="麺つゆ"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>酢 </label
+      ><meter
+        id="酢"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>料理酒 </label
+      ><meter
+        id="料理酒"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>みりん </label
+      ><meter
+        id="みりん"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>ごま油 </label
+      ><meter
+        id="ごま油"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>サラダ油 </label
+      ><meter
+        id="サラダ油"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>ケチャップ </label
+      ><meter
+        id="ケチャプ"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>マヨネーズ </label
+      ><meter
+        id="マヨネーズ"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>レモン汁 </label
+      ><meter
+        id="レモン汁"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>味噌 </label
+      ><meter
+        id="味噌"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>ウスターソース </label
+      ><meter
+        id="ウスターソース"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>とんかつソース </label
+      ><meter
+        id="とんかつソース"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>オイスターソース </label
+      ><meter
+        id="オイスターソース"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+      <label>コチュジャン </label
+      ><meter
+        id="コチュジャン"
+        min="0"
+        max="1"
+        low="0.3"
+        high="0.8"
+        optimum="0.85"
+        value=""
+      ></meter
+      ><br />
+
+      <h2>食材</h2>
+
+
+      <style>
+        label {
+          display: inline-block;
+          width: 20%; /* ラベルの横幅を統一 */
+        }
+
+        meter {
+          width: 30%; /* meterの横幅 */
+          vertical-align: middle;
+        }
+
+    
+      </style>
+
+<script>
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbz-LVQaKre-QCjGCG8crVb1swDQHljVNyRDeNpX2V6TzAsZB8SjicADwTUS6MdBySfs/exec";
+  
+    fetch(scriptUrl)
+      .then(res => res.json())
+      .then(data => {
+        Object.keys(data).forEach(name => {
+          const meter = document.getElementById(name);
+          if (meter) {
+            meter.value = data[name];
+          }
+        });
+      })
+      .catch(err => {
+        console.error("データ取得エラー:", err);
+      });
+  </script>
+   
+    </form>
+  </body>
+</html>
