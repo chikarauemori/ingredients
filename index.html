@@ -7,7 +7,11 @@
   </head>
   <body>
     <h2>調味料</h2>
-    
+    <form 
+    id="userForm1"
+    action="https://script.google.com/macros/s/AKfycbzo5bm4vAlImsxjtZsxhR6AwXQpxgUZxmE7XYhT-QX65tvt6vtgYfbq2rDtcrsdVq0/exec"
+    method="post"
+    >
       <label>塩 </label
       ><meter
         id="塩"
@@ -18,7 +22,17 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      > 
+      <select name="塩">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>砂糖 </label
       ><meter
         id="砂糖"
@@ -29,7 +43,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="砂糖">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>塩胡椒 </label
       ><meter
         id="塩胡椒"
@@ -40,7 +65,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="塩胡椒">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+
+      <br />
       <label>醤油 </label
       ><meter
         id="醤油"
@@ -51,7 +87,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="醤油">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>ポン酢 </label
       ><meter
         id="ポン酢"
@@ -62,7 +109,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="ポン酢">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+
+      <br />
       <label>麺つゆ </label
       ><meter
         id="麺つゆ"
@@ -73,7 +131,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="麺つゆ">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+
+      <br />
       <label>酢 </label
       ><meter
         id="酢"
@@ -84,7 +153,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="酢">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+
+      <br />
       <label>料理酒 </label
       ><meter
         id="料理酒"
@@ -95,7 +175,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="料理酒">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+
+      <br />
       <label>みりん </label
       ><meter
         id="みりん"
@@ -106,7 +197,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="みりん">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>ごま油 </label
       ><meter
         id="ごま油"
@@ -117,7 +219,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="ごま油">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>サラダ油 </label
       ><meter
         id="サラダ油"
@@ -128,7 +241,113 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="サラダ油">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
+
+      <label>バター </label
+        ><meter
+          id="バター"
+          min="0"
+          max="1"
+          low="0.3"
+          high="0.8"
+          optimum="0.85"
+          value=""
+        ></meter
+        >
+        
+        <select name="バター">
+          <option value=""></option>
+          <option value="1">100%</option>
+          <option value="0.75">75%</option>
+          <option value="0.5">50%</option>
+          <option value="0.25">25%</option>
+          <option value="0">0%</option>
+      </select>
+        
+        <br />      
+        
+        
+
+            <label>マーマレード </label
+                ><meter
+                  id="マーマレード"
+                  min="0"
+                  max="1"
+                  low="0.3"
+                  high="0.8"
+                  optimum="0.85"
+                  value=""
+                ></meter
+                >
+                
+                <select name="マーマレードー">
+                  <option value=""></option>
+                  <option value="1">100%</option>
+                  <option value="0.75">75%</option>
+                  <option value="0.5">50%</option>
+                  <option value="0.25">25%</option>
+                  <option value="0">0%</option>
+              </select>
+                
+                <br />
+
+                <label>いちごジャム </label
+                    ><meter
+                      id="いちごジャム"
+                      min="0"
+                      max="1"
+                      low="0.3"
+                      high="0.8"
+                      optimum="0.85"
+                      value=""
+                    ></meter
+                    >
+                    
+                    <select name="いちごジャム">
+                      <option value=""></option>
+                      <option value="1">100%</option>
+                      <option value="0.75">75%</option>
+                      <option value="0.5">50%</option>
+                      <option value="0.25">25%</option>
+                      <option value="0">0%</option>
+                  </select>
+                    
+                    <br />
+
+                    <label>ハチミツ </label
+                        ><meter
+                          id="ハチミツ"
+                          min="0"
+                          max="1"
+                          low="0.3"
+                          high="0.8"
+                          optimum="0.85"
+                          value=""
+                        ></meter
+                        >
+                        
+                        <select name="ハチミツ">
+                          <option value=""></option>
+                          <option value="1">100%</option>
+                          <option value="0.75">75%</option>
+                          <option value="0.5">50%</option>
+                          <option value="0.25">25%</option>
+                          <option value="0">0%</option>
+                      </select>
+                        
+                        <br />
+
       <label>ケチャップ </label
       ><meter
         id="ケチャプ"
@@ -139,7 +358,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="ケチャップ">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>マヨネーズ </label
       ><meter
         id="マヨネーズ"
@@ -150,7 +380,20 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="マヨネーズ">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
+
+ 
       <label>レモン汁 </label
       ><meter
         id="レモン汁"
@@ -161,7 +404,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="レモン汁">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+
+      <br />
       <label>味噌 </label
       ><meter
         id="味噌"
@@ -172,7 +426,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="味噌">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>ウスターソース </label
       ><meter
         id="ウスターソース"
@@ -183,7 +448,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="ウスターソース">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+
+      <br />
       <label>とんかつソース </label
       ><meter
         id="とんかつソース"
@@ -194,7 +470,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="とんかつソース">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>オイスターソース </label
       ><meter
         id="オイスターソース"
@@ -205,7 +492,18 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="オイスターソース">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br />
       <label>コチュジャン </label
       ><meter
         id="コチュジャン"
@@ -216,7 +514,20 @@
         optimum="0.85"
         value=""
       ></meter
-      ><br />
+      >
+      
+      <select name="コチュジャン">
+        <option value=""></option>
+        <option value="1">100%</option>
+        <option value="0.75">75%</option>
+        <option value="0.5">50%</option>
+        <option value="0.25">25%</option>
+        <option value="0">0%</option>
+    </select>
+      
+      <br /><br>
+    <input type="submit" value="送信">
+      </form>
 
       <h2>食材</h2>
 
@@ -224,7 +535,7 @@
       <style>
         label {
           display: inline-block;
-          width: 20%; /* ラベルの横幅を統一 */
+          width: 25%; /* ラベルの横幅を統一 */
         }
 
         meter {
