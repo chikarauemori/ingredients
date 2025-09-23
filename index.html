@@ -13,7 +13,7 @@
     <h1>調味料・食材 〜消費〜</h1>
     <h2>調味料</h2>
 
-    <select name="調味料" id="condiment">
+    <select name="調味料" id="condiment" class="menuBox">
       <option>調味料のジャンルを選択</option>
       <option value="1">塩・砂糖</option>
       <option value="2">醤油・酒・油</option>
@@ -947,7 +947,7 @@
 
       <h2>食材</h2>
 
-      <select name="調味料" id="ingredients">
+      <select name="調味料" id="ingredients" class="menuBox">
         <option>調味料のジャンルを選択</option>
         <option value="I1">肉類</option>
         <option value="I2">野菜</option>
@@ -958,7 +958,7 @@
         <option value="I7">その他</option>
        </select>
 
-       <select name="レシピ" id="recipe">
+       <select name="レシピ" id="recipe" class="menuBox">
         <option>料理名のジャンルを選択</option>
         <option value="R1">唐揚げ</option>
         <option value="R2">ポテトサラダ</option>
@@ -1377,7 +1377,7 @@
     display:none;
   }
 
-  select{
+  select.menuBox{
     font-size: 150%;
     display: block;
     margin:10px;
