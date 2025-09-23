@@ -1210,8 +1210,10 @@
 
         document.getElementById(outputId).value = sum;
       }
-        
-        document.getElementById('sumButton').addEventListener('click' , function(){
+
+      
+
+        document.getElementById('recipe').addEventListener('change' , function(){
           sumByClass('potato','potato');
           sumByClass('ginger','ginger');
           sumByClass('chicken','chicken');
@@ -1230,6 +1232,33 @@
           sumByClass('friedTofu','friedTofu');
           sumByClass('milk','milk');
           sumByClass('pork','pork');
+
+        });
+
+        document.getElementById('ingredients').addEventListener('change' , function(){
+          sumByClass('potato','potato');
+          sumByClass('ginger','ginger');
+          sumByClass('chicken','chicken');
+          sumByClass('carrot','carrot');
+          sumByClass('cucumber','cucumber');
+          sumByClass('onion','onion');
+          sumByClass('egg','egg');
+          sumByClass('ham','ham');
+          sumByClass('sprouts','sprouts');
+          sumByClass('spinach','spinach');
+          sumByClass('mincedMeat','mincedMeat');
+          sumByClass('bellPepper','bellPepper');
+          sumByClass('curry','curry');
+          sumByClass('tofu','tofu');
+          sumByClass('greenOnion','greenOnion');
+          sumByClass('friedTofu','friedTofu');
+          sumByClass('milk','milk');
+          sumByClass('pork','pork');
+
+        });
+        
+        document.getElementById('sumButton').addEventListener('click' , function(){
+          
 
           document.querySelector('.iSubmit').click();
 
@@ -1382,6 +1411,10 @@
     display: block;
     margin:10px;
     
+  }
+
+  .menuBox.close{
+    display: none;
   }
 
   h2#sumButton{
