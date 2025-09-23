@@ -972,7 +972,11 @@
         <option value="R10">コロッケ</option>
        </select>
 
-      <form id="userForm2">
+       <form 
+       id="userForm2"
+       action="https://script.google.com/macros/s/AKfycbwzl5KoC5Zf1IQdXMDIGdk8HUWCqJAg3H692n3F0TBASr5l2AMGO5orUyXzvutT7x7duA/exec"
+       method="post"
+       >
 
 
   <div class="I1 close">
@@ -981,14 +985,14 @@
         <label>牛薄切り肉</label> <input type="number" name="牛薄切り肉" size="4px"><br>
         <label>牛ステーキ</label> <input type="number" name="牛ステーキ" size="4px"><br>
         <label>牛ブロック</label> <input type="number" name="牛ブロック" size="4px"><br>
-        <label>豚薄切り</label> <input type="number" name="豚薄切り" size="4px"><br>
+        <label>豚薄切り</label> <input type="number" id="pork" name="豚薄切り" size="4px"><br>
         <label>豚生姜焼き</label> <input type="number" name="豚生姜焼き" size="4px"><br>
         <label>豚ブロック</label> <input type="number" name="豚ブロック" size="4px"><br>
         <label>豚ロース</label> <input type="number" name="豚ロース" size="4px"><br>
-        <label>鶏もも肉</label> <input type="number" name="鶏もも肉" size="4px"><br>
+        <label>鶏もも肉</label> <input type="number" id="chicken" name="鶏もも肉" size="4px"><br>
         <label>鶏胸肉</label> <input type="number" name="鶏胸肉" size="4px"><br>
-        <label>挽き肉</label> <input type="number" name="挽き肉" size="4px"><br>
-        <label>ハム</label> <input type="number" name="ハム" size="4px"><br>
+        <label>挽き肉</label> <input type="number" id="mincedMeat" name="挽き肉" size="4px"><br>
+        <label>ハム</label> <input type="number" id="ham" name="ハム" size="4px"><br>
         <label>ソーセージ</label> <input type="number" name="ソーセージ" size="4px"><br>
 
 
@@ -1000,36 +1004,36 @@
         <label>白菜</label> <input type="number" name="白菜" size="4px"><br>
         <label>水菜</label> <input type="number" name="水菜" size="4px"><br>
         <label>小松菜</label> <input type="number" name="小松菜" size="4px"><br>
-        <label>ほうれん草</label> <input type="number" name="ほうれん草" size="4px"><br>
-        <label>玉ねぎ</label> <input type="number" name="玉ねぎ" size="4px"><br>
-        <label>長ネギ</label> <input type="number" name="長ネギ" size="4px"><br>
-        <label>もやし</label> <input type="number" name="もやし" size="4px"><br>
-        <label>きゅうり</label> <input type="number" name="きゅうり" size="4px"><br>
-        <label>ピーマン</label> <input type="number" name="ピーマン" size="4px"><br>
-        <label>にんじん</label> <input type="number" name="にんじん" size="4px"><br>
+        <label>ほうれん草</label> <input type="number" id="spinach" name="ほうれん草" size="4px"><br>
+        <label>玉ねぎ</label> <input type="number" id="onion" name="玉ねぎ" size="4px"><br>
+        <label>長ネギ</label> <input type="number" id="greenOnion" name="長ネギ" size="4px"><br>
+        <label>もやし</label> <input type="number" id="sprouts" name="もやし" size="4px"><br>
+        <label>きゅうり</label> <input type="number" id="cucumber" name="きゅうり" size="4px"><br>
+        <label>ピーマン</label> <input type="number" id="bellPepper" name="ピーマン" size="4px"><br>
+        <label>にんじん</label> <input type="number" id="carrot" name="にんじん" size="4px"><br>
         <label>大根</label> <input type="number" name="大根" size="4px"><br>
-        <label>生姜</label> <input type="number" name="生姜" size="4px"><br>
+        <label>生姜</label> <input id="ginger" type="number" name="生姜" size="4px"><br>
       </div>
       <div class="I3 close">
 
         <h3>イモ類</h3><br>
-        <label>じゃがいも</label> <input type="number" name="じゃがいも" size="4px"><br>
+        <label>じゃがいも</label> <input id="potato" type="number" name="じゃがいも" size="4px"><br>
         <label>サツマイモ</label> <input type="number" name="サツマイモ" size="4px"><br>
 
       </div>
       <div class="I4 close">
         <h3>乳製品・卵</h3><br>
-        <label>牛乳</label> <input type="number" name="牛乳" size="4px"><br>
+        <label>牛乳</label> <input type="number" id="milk" name="牛乳" size="4px"><br>
         <label>チーズ</label> <input type="number" name="チーズ" size="4px"><br>
         <label>ヨーグルト</label> <input type="number" name="ヨーグルト" size="4px"><br>
         <label>バニラヨーグルト</label> <input type="number" name="バニラヨーグルト" size="4px"><br>
-        <label>鶏卵</label> <input type="number" name="鶏卵" size="4px"><br>
+        <label>鶏卵</label> <input type="number" id="egg" name="鶏卵" size="4px"><br>
 
       </div>
       <div class="I5 close">
         <h3>豆・豆腐</h3><br>
-        <label>豆腐</label> <input type="number" name="豆腐" size="4px"><br>
-        <label>油揚げ</label> <input type="number" name="油揚げ" size="4px"><br>
+        <label>豆腐</label> <input type="number" id="tofu" name="豆腐" size="4px"><br>
+        <label>油揚げ</label> <input type="number" id="friedTofu" name="油揚げ" size="4px"><br>
         <label>厚揚げ</label> <input type="number" name="厚揚げ" size="4px"><br>
         <label>納豆</label> <input type="number" name="納豆" size="4px"><br>
 
@@ -1047,7 +1051,7 @@
       </div>
       <div class="I7 close">
         <h3>その他</h3><br>
-        <label>カレー粉</label> <input type="number" name="カレー粉" size="4px"><br>
+        <label>カレー粉</label> <input type="number" id="curry" name="カレー粉" size="4px"><br>
         <label>トマト缶</label> <input type="number" name="トマト缶" size="4px"><br>
         <label>冷凍餃子</label> <input type="number" name="冷凍餃子" size="4px"><br>
         <label>食パン</label> <input type="number" name="食パン" size="4px"><br>
@@ -1055,176 +1059,97 @@
 
         <div class="recipe R1 close">
           <h3>唐揚げ</h3><br>
-            <label>生姜</label> <input type="number" name="生姜" size="4px"><br>
-            <label>鶏もも肉</label> <input type="number" name="鶏もも肉" size="4px"><br>
+            <label>生姜</label> <input type="number" class="ginger" name="" size="4px" ><br>
+            <label>鶏もも肉</label> <input type="number" class="chicken" name="" size="4px"><br>
           </div>
 
           <div class="recipe R2 close">
             <h3>ポテトサラダ</h3><br>
-              <label>じゃがいも</label> <input type="number" name="じゃがいも" size="4px"><br>
-              <label>にんじん</label> <input type="number" name="にんじん" size="4px"><br>
-              <label>きゅうり</label> <input type="number" name="きゅうり" size="4px"><br>
-              <label>玉ねぎ</label> <input type="number" name="玉ねぎ" size="4px"><br>
-              <label>鶏卵</label> <input type="number" name="鶏卵" size="4px"><br>
-              <label>ハム</label> <input type="number" name="ハム" size="4px"><br>
+              <label>じゃがいも</label> <input type="number" class="potato" name="" size="4px"><br>
+              <label>にんじん</label> <input type="number" class="carrot" name="" size="4px"><br>
+              <label>きゅうり</label> <input type="number" class="cucumber" name="" size="4px"><br>
+              <label>玉ねぎ</label> <input type="number" class="onion" name="" size="4px"><br>
+              <label>鶏卵</label> <input type="number" class="egg" name="" size="4px"><br>
+              <label>ハム</label> <input type="number" class="ham" name="" size="4px"><br>
             </div>
 
             <div class="recipe R3 close">
               <h3>ビビンバ</h3><br>
-                <label>もやし</label> <input type="number" name="もやし" size="4px"><br>
-                <label>にんじん</label> <input type="number" name="にんじん" size="4px"><br>
-                <label>ほうれん草</label> <input type="number" name="ほうれん草" size="4px"><br>
-                <label>挽き肉</label> <input type="number" name="挽き肉" size="4px"><br>
+                <label>もやし</label> <input type="number" class="sprouts" name="" size="4px"><br>
+                <label>にんじん</label> <input type="number" class="carrot" name="" size="4px"><br>
+                <label>ほうれん草</label> <input type="number" class="spinach" name="" size="4px"><br>
+                <label>挽き肉</label> <input type="number" class="mincedMeat" name="" size="4px"><br>
                 
             </div>
             <div class="recipe R4 close">
               <h3>キーマカレー</h3><br>
-                <label>にんじん</label> <input type="number" name="にんじん" size="4px"><br>
-                <label>ピーマン</label> <input type="number" name="ピーマン" size="4px"><br>
-                <label>玉ねぎ</label> <input type="number" name="玉ねぎ" size="4px"><br>
-                <label>生姜</label> <input type="number" name="生姜" size="4px"><br>
-                <label>鶏卵</label> <input type="number" name="鶏卵" size="4px"><br>
-                <label>挽き肉</label> <input type="number" name="挽き肉" size="4px"><br>
-                <label>カレー粉</label> <input type="number" name="カレー粉" size="4px"><br>
+                <label>にんじん</label> <input type="number" class="carrot" name="" size="4px"><br>
+                <label>ピーマン</label> <input type="number" class="bellPepper" name="" size="4px"><br>
+                <label>玉ねぎ</label> <input type="number" class="onion" name="" size="4px"><br>
+                <label>生姜</label> <input class="ginger" type="number" name="" size="4px"><br>
+                <label>鶏卵</label> <input type="number" class="egg" name="" size="4px"><br>
+                <label>挽き肉</label> <input type="number" class="mincedMeat" name="" size="4px"><br>
+                <label>カレー粉</label> <input type="number" class="curry" name="" size="4px"><br>
               </div>
 
             <div class="recipe R5 close">
               <h3>麻婆豆腐</h3><br>
-                <label>豆腐</label> <input type="number" name="豆腐" size="4px"><br>
-                <label>長ネギ</label> <input type="number" name="長ネギ" size="4px"><br>
-                <label>生姜</label> <input type="number" name="生姜" size="4px"><br>
-                <label>挽き肉</label> <input type="number" name="挽き肉" size="4px"><br>
+                <label>豆腐</label> <input type="number" class="tofu" name="" size="4px"><br>
+                <label>長ネギ</label> <input type="number" class="greenOnion" name="" size="4px"><br>
+                <label>生姜</label> <input class="ginger" type="number" name="" size="4px"><br>
+                <label>挽き肉</label> <input type="number" class="mincedMeat" name="" size="4px"><br>
 
                   
             </div>
             <div class="recipe R6 close">
               <h3>炊き込みご飯</h3><br>
-                <label>にんじん</label> <input type="number" name="にんじん" size="4px"><br>
-                <label>油揚げ</label> <input type="number" name="油揚げ" size="4px"><br>
-                <label>鶏もも肉</label> <input type="number" name="鶏もも肉" size="4px"><br>   
+                <label>にんじん</label> <input type="number" class="carrot" name="" size="4px"><br>
+                <label>油揚げ</label> <input type="number" class="friedTofu" name="" size="4px"><br>
+                <label>鶏もも肉</label> <input type="number" class="chicken" name="" size="4px"><br>   
             </div>
 
             <div class="recipe R7 close">
               <h3>ハンバーグ</h3><br>
-                <label>玉ねぎ</label> <input type="number" name="玉ねぎ" size="4px"><br>
-                <label>挽き肉</label> <input type="number" name="挽き肉" size="4px"><br>
-                <label>牛乳</label> <input type="number" name="牛乳" size="4px"><br>
+                <label>玉ねぎ</label> <input type="number" class="onion" name="" size="4px"><br>
+                <label>挽き肉</label> <input type="number" class="mincedMeat" name="" size="4px"><br>
+                <label>牛乳</label> <input type="number" class="milk" name="" size="4px"><br>
             </div>
 
             <div class="recipe R8 close">
               <h3>オムライス</h3><br>
-              <label>玉ねぎ</label> <input type="number" name="玉ねぎ" size="4px"><br>
-              <label>にんじん</label> <input type="number" name="にんじん" size="4px"><br>
-              <label>鶏卵</label> <input type="number" name="鶏卵" size="4px"><br>
-              <label>牛乳</label> <input type="number" name="牛乳" size="4px"><br>   
+              <label>玉ねぎ</label> <input type="number" class="onion" name="" size="4px"><br>
+              <label>にんじん</label> <input type="number" class="carrot" name="" size="4px"><br>
+              <label>鶏卵</label> <input type="number" class="egg" name="" size="4px"><br>
+              <label>牛乳</label> <input type="number" class="milk" name="" size="4px"><br>   
+              <label>鶏もも肉</label> <input type="number" class="chicken" name="" size="4px"><br>
             </div>
 
             <div class="recipe R9 close">
               <h3>チャーハン</h3><br>
-                <label>にんじん</label> <input type="number" name="にんじん" size="4px"><br>
-                <label>ピーマン</label> <input type="number" name="ピーマン" size="4px"><br>
-                <label>玉ねぎ</label> <input type="number" name="玉ねぎ" size="4px"><br>
-                <label>長ネギ</label> <input type="number" name="長ネギ" size="4px"><br>
-                <label>鶏卵</label> <input type="number" name="鶏卵" size="4px"><br>
-                <label>豚薄切り</label> <input type="number" name="豚薄切り" size="4px"><br>
+                <label>にんじん</label> <input type="number" class="carrot" name="" size="4px"><br>
+                <label>ピーマン</label> <input type="number" class="bellPepper" name="" size="4px"><br>
+                <label>玉ねぎ</label> <input type="number" class="onion" name="" size="4px"><br>
+                <label>長ネギ</label> <input type="number" class="greenOnion" name="" size="4px"><br>
+                <label>鶏卵</label> <input type="number" class="egg" name="" size="4px"><br>
+                <label>豚薄切り</label> <input type="number" class="pork" name="" size="4px"><br>
             </div>
 
             <div class="recipe R10 close">
               <h3>コロッケ</h3><br>
-                <label>じゃがいも</label> <input type="number" name="じゃがいも" size="4px"><br>
-                <label>玉ねぎ</label> <input type="number" name="玉ねぎ" size="4px"><br>
-                <label>挽き肉</label> <input type="number" name="挽き肉" size="4px"><br>
+                <label>じゃがいも</label> <input type="number" class="potato" name="" size="4px"><br>
+                <label>玉ねぎ</label> <input type="number" class="onion" name="" size="4px"><br>
+                <label>挽き肉</label> <input type="number" class="mincedMeat" name="" size="4px"><br>
             </div>
 
 
 
         <br /><br>
+        <h2 id="sumButton">test</h2>
         <button type="submit" class="iSubmit">送信</button>
 
       </form>
 
-      <script>
-        document.getElementById('userForm2').addEventListener('submit' , function(e){
-          e.preventDefault();
-
-          const form = e.target;
-          const data = new FormData(form);
-          const timestamp = new Date();
-
-          const formData = {};
-          for(const[key , value] of data.entries()){
-            const num = Number(value);
-            if (!num) continue;
-            formData[key] = (formData[key] || 0) + num;
-          }
-
-          const row = [
-            timestamp,
-            formData["牛薄切り肉"] || 0,
-            formData["牛ステーキ"] || 0,
-            formData["牛ブロック"] || 0,
-            formData["豚薄切り肉"] || 0,
-            formData["豚生姜焼き"] || 0,
-            formData["豚ブロック"] || 0,
-            formData["豚ロース"] || 0,
-            formData["鶏もも肉"] || 0,
-            formData["鶏胸肉"] || 0,
-            formData["挽き肉"] || 0,
-            formData["ハム"] || 0,
-            formData["ソーセージ"] || 0,
-            formData["キャベツ"] || 0,
-            formData["レタス"] || 0,
-            formData["白菜"] || 0,
-            formData["水菜"] || 0,
-            formData["小松菜"] || 0,
-            formData["ほうれん草"] || 0,
-            formData["玉ねぎ"] || 0,
-            formData["長ネギ"] || 0,
-            formData["もやし"] || 0,
-            formData["きゅうり"] || 0,
-            formData["ピーマン"] || 0,
-            formData["にんじん"] || 0,
-            formData["大根"] || 0,
-            formData["生姜"] || 0,
-            formData["じゃがいも"] || 0,
-            formData["サツマイモ"] || 0,
-            formData["牛乳"] || 0,
-            formData["チーズ"] || 0,
-            formData["ヨーグルト"] || 0,
-            formData["バニラヨーグルト"] || 0,
-            formData["鶏卵"] || 0,
-            formData["豆腐"] || 0,
-            formData["油揚げ"] || 0,
-            formData["厚揚げ"] || 0,
-            formData["納豆"] || 0,
-            formData["うどん"] || 0,
-            formData["そば"] || 0,
-            formData["そうめん"] || 0,
-            formData["中華麺"] || 0,
-            formData["焼きそば"] || 0,
-            formData["パスタ"] || 0,
-            formData["辛ラーメン"] || 0,
-            formData["カレー粉"] || 0,
-            formData["トマト缶"] || 0,
-            formData["冷凍餃子"] || 0,
-            formData["食パン"] || 0,
-        ];
-                fetch("https://script.google.com/macros/s/AKfycbxAMaUBAaPJEE5C1WHcnnlZoxhakZbLCZhtEWBqKQpg1B2Nc3u-4hbIsFPMolRC_IF6rg/exec", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" }, // ←追加
-                  body: JSON.stringify(row),
-                }).then(res => {
-                  alert("送信完了！");
-                }).catch(err => {
-                  console.error(err);
-                  alert("送信エラー");
-                });
-
-        })
-
-        
       
-      </script>
 
       <script>
         const iSelect = document.getElementById('ingredients')
@@ -1321,6 +1246,44 @@
         })
 
         
+      </script>
+      <script>
+
+        function sumByClass(className, outputId){
+          const list = document.querySelectorAll('.' + className);
+          let sum = 0;
+        
+        
+        list.forEach(item =>{
+          const val = Number(item.value);
+          if (!val) return;
+          sum += val;
+        });
+
+        document.getElementById(outputId).value = sum;
+      }
+        
+        document.getElementById('sumButton').addEventListener('click' , function(){
+          sumByClass('potato','potato');
+          sumByClass('ginger','ginger');
+          sumByClass('chicken','chicken');
+          sumByClass('carrot','carrot');
+          sumByClass('cucumber','cucumber');
+          sumByClass('onion','onion');
+          sumByClass('egg','egg');
+          sumByClass('ham','ham');
+          sumByClass('sprouts','sprouts');
+          sumByClass('spinach','spinach');
+          sumByClass('mincedMeat','mincedMeat');
+          sumByClass('bellPepper','bellPepper');
+          sumByClass('curry','curry');
+          sumByClass('tofu','tofu');
+          sumByClass('greenOnion','greenOnion');
+          sumByClass('friedTofu','friedTofu');
+          sumByClass('milk','milk');
+          sumByClass('pork','pork');
+
+        })
       </script>
 
     <br>
