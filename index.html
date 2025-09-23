@@ -949,13 +949,13 @@
 
       <select name="調味料" id="ingredients">
         <option>調味料のジャンルを選択</option>
-        <option value="1">肉類</option>
-        <option value="2">野菜</option>
-        <option value="3">イモ類</option>
-        <option value="4">乳製品・卵</option>
-        <option value="5">豆・豆腐</option>
-        <option value="6">麺類</option>
-        <option value="7">その他</option>
+        <option value="I1">肉類</option>
+        <option value="I2">野菜</option>
+        <option value="I3">イモ類</option>
+        <option value="I4">乳製品・卵</option>
+        <option value="I5">豆・豆腐</option>
+        <option value="I6">麺類</option>
+        <option value="I7">その他</option>
        </select>
 
        <select name="レシピ" id="recipe">
@@ -979,7 +979,7 @@
        >
 
 
-  <div class="I1 close">
+  <div class="ingredients I1 close">
       <h3>肉類</h3><br>
 
         <label>牛薄切り肉</label> <input type="number" name="牛薄切り肉" size="4px"><br>
@@ -997,7 +997,7 @@
 
 
       </div>
-      <div class="I2 close">
+      <div class="ingredients I2 close">
         <h3>野菜</h3><br>
         <label>キャベツ</label> <input type="number" name="キャベツ" size="4px"><br>
         <label>レタス</label> <input type="number" name="レタス" size="4px"><br>
@@ -1014,14 +1014,14 @@
         <label>大根</label> <input type="number" name="大根" size="4px"><br>
         <label>生姜</label> <input id="ginger" type="number" name="生姜" size="4px"><br>
       </div>
-      <div class="I3 close">
+      <div class="ingredients I3 close">
 
         <h3>イモ類</h3><br>
         <label>じゃがいも</label> <input id="potato" type="number" name="じゃがいも" size="4px"><br>
         <label>サツマイモ</label> <input type="number" name="サツマイモ" size="4px"><br>
 
       </div>
-      <div class="I4 close">
+      <div class="ingredients I4 close">
         <h3>乳製品・卵</h3><br>
         <label>牛乳</label> <input type="number" id="milk" name="牛乳" size="4px"><br>
         <label>チーズ</label> <input type="number" name="チーズ" size="4px"><br>
@@ -1030,7 +1030,7 @@
         <label>鶏卵</label> <input type="number" id="egg" name="鶏卵" size="4px"><br>
 
       </div>
-      <div class="I5 close">
+      <div class="ingredients I5 close">
         <h3>豆・豆腐</h3><br>
         <label>豆腐</label> <input type="number" id="tofu" name="豆腐" size="4px"><br>
         <label>油揚げ</label> <input type="number" id="friedTofu" name="油揚げ" size="4px"><br>
@@ -1038,7 +1038,7 @@
         <label>納豆</label> <input type="number" name="納豆" size="4px"><br>
 
       </div>
-      <div class="I6 close">
+      <div class="ingredients I6 close">
         <h3>麺類</h3><br>
         <label>うどん</label> <input type="number" name="うどん" size="4px"><br>
         <label>そば</label> <input type="number" name="そば" size="4px"><br>
@@ -1049,7 +1049,7 @@
         <label>辛ラーメン</label> <input type="number" name="辛ラーメン" size="4px"><br>
 
       </div>
-      <div class="I7 close">
+      <div class="ingredients I7 close">
         <h3>その他</h3><br>
         <label>カレー粉</label> <input type="number" id="curry" name="カレー粉" size="4px"><br>
         <label>トマト缶</label> <input type="number" name="トマト缶" size="4px"><br>
@@ -1144,94 +1144,42 @@
 
 
         <br /><br>
-        <h2 id="sumButton">test</h2>
-        <button type="submit" class="iSubmit">送信</button>
+        <h2 id="sumButton">①確定</h2>
+        <button type="submit" class="iSubmit">②送信</button>
 
       </form>
 
       
 
       <script>
-        const iSelect = document.getElementById('ingredients')
-        const I1 = document.querySelector('.I1')
-        const I2 = document.querySelector('.I2')
-        const I3 = document.querySelector('.I3')
-        const I4 = document.querySelector('.I4')
-        const I5 = document.querySelector('.I5')
-        const I6 = document.querySelector('.I6')
-        const I7 = document.querySelector('.I7')
-       
-        
-  
-        iSelect.addEventListener("change" , () => {
-          const iSelectedOption = iSelect.value; 
-          
-          if(iSelectedOption == 1){
-             I1.classList.toggle('close');
-             I2.classList.add('close');
-             I3.classList.add('close');
-             I4.classList.add('close');
-             I5.classList.add('close');
-             I6.classList.add('close');
-             I7.classList.add('close');
-          } else if (iSelectedOption == 2){
-             I2.classList.toggle('close');
-             I1.classList.add('close');
-             I3.classList.add('close');
-             I4.classList.add('close');
-             I5.classList.add('close');
-             I6.classList.add('close');
-             I7.classList.add('close');
-          } else if (iSelectedOption == 3){
-             I3.classList.toggle('close');
-             I2.classList.add('close');
-             I1.classList.add('close');
-             I4.classList.add('close');
-             I5.classList.add('close');
-             I6.classList.add('close');
-             I7.classList.add('close');
-          } else if (iSelectedOption == 4){
-             I4.classList.toggle('close');
-             I2.classList.add('close');
-             I3.classList.add('close');
-             I1.classList.add('close');
-             I5.classList.add('close');
-             I6.classList.add('close');
-             I7.classList.add('close');
-          } else if (iSelectedOption == 5){
-             I5.classList.toggle('close');
-             I2.classList.add('close');
-             I3.classList.add('close');
-             I4.classList.add('close');
-             I1.classList.add('close');
-             I6.classList.add('close');
-             I7.classList.add('close');
-          } else if (iSelectedOption == 6){
-             I6.classList.toggle('close');
-             I2.classList.add('close');
-             I3.classList.add('close');
-             I4.classList.add('close');
-             I5.classList.add('close');
-             I1.classList.add('close');
-             I7.classList.add('close');
-          } else if (iSelectedOption == 7){
-             I7.classList.toggle('close');
-             I2.classList.add('close');
-             I3.classList.add('close');
-             I4.classList.add('close');
-             I5.classList.add('close');
-             I6.classList.add('close');
-             I1.classList.add('close');
-          }
-  
-      });
+        const ingredientsList = document.querySelectorAll('.ingredients');
+        console.log(ingredientsList);
+        const iSelect = document.getElementById('ingredients');
+
+        for (let i = 0; i < ingredientsList.length; i++ ){
+          ingredientsList[i].id = `I${i+1}`;
+        }
+
+        iSelect.addEventListener('change' , function(){
+          const iSelectedOption = iSelect.value;
+          console.log(iSelectedOption);
+
+          ingredientsList.forEach(ingredients => {
+            ingredients.classList.add('close');
+            if(ingredients.id === iSelectedOption){
+              ingredients.classList.remove('close');
+            }
+          })
+
+        })
+
       </script>
 
       <script>
         const recipeList = document.querySelectorAll('.recipe');
         const rSelect = document.getElementById('recipe')
-        for (let i = 0; i < recipeList.length; i++){
-          recipeList[i].id = `R${i+1}`;
+        for (let r = 0; r < recipeList.length; r++){
+          recipeList[r].id = `R${r+1}`;
         }
 
         rSelect.addEventListener('change' , function(){
@@ -1417,11 +1365,28 @@
   input.cSubmit{
     font-size: 200%;
     background-color:#ffa79f ;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.22);
   }
  
   button.iSubmit{
     font-size: 200%;
     background-color:#9fcdff ;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.22);
+  }
+
+  select{
+    font-size: 150%;
+    display: block;
+    margin:10px;
+    
+  }
+
+  h2#sumButton{
+    background-color:#9fcdff ;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.22);
+    width:100px;
+    padding: 10px;
+    border: 2px solid;
   }
 
 </style>
