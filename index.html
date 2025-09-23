@@ -1211,6 +1211,7 @@
         ];
                 fetch("https://script.google.com/macros/s/AKfycbyIOIN1QEYg0TvSyi48s4G_x_vF3ntH-aBeBn9x6jzqdrPkukl7MJUVOt068PBDmoNbsw/exec", {
                   method: "POST",
+                  headers: { "Content-Type": "application/json" }, // ←追加
                   body: JSON.stringify(row),
                 }).then(res => {
                   alert("送信完了！");
@@ -1220,6 +1221,8 @@
                 });
 
         })
+
+        
       
       </script>
 
